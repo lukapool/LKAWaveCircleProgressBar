@@ -13,9 +13,9 @@
 		A1986D091F4D720D008BA99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1986D071F4D720D008BA99D /* Main.storyboard */; };
 		A1986D0B1F4D720D008BA99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1986D0A1F4D720D008BA99D /* Assets.xcassets */; };
 		A1986D0E1F4D720D008BA99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1986D0C1F4D720D008BA99D /* LaunchScreen.storyboard */; };
-		A1986D171F4D7264008BA99D /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D161F4D7264008BA99D /* WaveLayer.m */; };
-		A1986D1A1F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */; };
 		A1986D1D1F4DCDAA008BA99D /* TestViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */; };
+		A1986D241F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D211F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m */; };
+		A1986D251F4EBDB5008BA99D /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D231F4EBDB5008BA99D /* WaveLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,12 +29,12 @@
 		A1986D0A1F4D720D008BA99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1986D0D1F4D720D008BA99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1986D0F1F4D720D008BA99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1986D151F4D7264008BA99D /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
-		A1986D161F4D7264008BA99D /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
-		A1986D181F4DAA0B008BA99D /* LKAWaveCircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAWaveCircleProgressBar.h; sourceTree = "<group>"; };
-		A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAWaveCircleProgressBar.m; sourceTree = "<group>"; };
 		A1986D1B1F4DCDAA008BA99D /* TestViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewContorller.h; sourceTree = "<group>"; };
 		A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewContorller.m; sourceTree = "<group>"; };
+		A1986D201F4EBDB5008BA99D /* LKAWaveCircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAWaveCircleProgressBar.h; sourceTree = "<group>"; };
+		A1986D211F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAWaveCircleProgressBar.m; sourceTree = "<group>"; };
+		A1986D221F4EBDB5008BA99D /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
+		A1986D231F4EBDB5008BA99D /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 		A1986CFD1F4D720D008BA99D /* WaveAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				A1986D1E1F4E9522008BA99D /* LKAWaveCircleProgressBar */,
+				A1986D1F1F4EBDB5008BA99D /* LKAWaveCircleProgressBar */,
 				A1986D011F4D720D008BA99D /* AppDelegate.h */,
 				A1986D021F4D720D008BA99D /* AppDelegate.m */,
 				A1986D041F4D720D008BA99D /* ViewController.h */,
@@ -91,15 +91,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A1986D1E1F4E9522008BA99D /* LKAWaveCircleProgressBar */ = {
+		A1986D1F1F4EBDB5008BA99D /* LKAWaveCircleProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				A1986D151F4D7264008BA99D /* WaveLayer.h */,
-				A1986D161F4D7264008BA99D /* WaveLayer.m */,
-				A1986D181F4DAA0B008BA99D /* LKAWaveCircleProgressBar.h */,
-				A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */,
+				A1986D201F4EBDB5008BA99D /* LKAWaveCircleProgressBar.h */,
+				A1986D211F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m */,
+				A1986D221F4EBDB5008BA99D /* WaveLayer.h */,
+				A1986D231F4EBDB5008BA99D /* WaveLayer.m */,
 			);
-			name = LKAWaveCircleProgressBar;
+			path = LKAWaveCircleProgressBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,9 +176,9 @@
 			files = (
 				A1986D1D1F4DCDAA008BA99D /* TestViewContorller.m in Sources */,
 				A1986D061F4D720D008BA99D /* ViewController.m in Sources */,
+				A1986D251F4EBDB5008BA99D /* WaveLayer.m in Sources */,
 				A1986D031F4D720D008BA99D /* AppDelegate.m in Sources */,
-				A1986D171F4D7264008BA99D /* WaveLayer.m in Sources */,
-				A1986D1A1F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m in Sources */,
+				A1986D241F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m in Sources */,
 				A1986D001F4D720D008BA99D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
