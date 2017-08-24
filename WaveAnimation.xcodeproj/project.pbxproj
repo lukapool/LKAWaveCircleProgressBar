@@ -1,0 +1,347 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1986D001F4D720D008BA99D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986CFF1F4D720D008BA99D /* main.m */; };
+		A1986D031F4D720D008BA99D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D021F4D720D008BA99D /* AppDelegate.m */; };
+		A1986D061F4D720D008BA99D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D051F4D720D008BA99D /* ViewController.m */; };
+		A1986D091F4D720D008BA99D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1986D071F4D720D008BA99D /* Main.storyboard */; };
+		A1986D0B1F4D720D008BA99D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1986D0A1F4D720D008BA99D /* Assets.xcassets */; };
+		A1986D0E1F4D720D008BA99D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1986D0C1F4D720D008BA99D /* LaunchScreen.storyboard */; };
+		A1986D171F4D7264008BA99D /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D161F4D7264008BA99D /* WaveLayer.m */; };
+		A1986D1A1F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */; };
+		A1986D1D1F4DCDAA008BA99D /* TestViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1986CFB1F4D720D008BA99D /* WaveAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaveAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1986CFF1F4D720D008BA99D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1986D011F4D720D008BA99D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A1986D021F4D720D008BA99D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A1986D041F4D720D008BA99D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A1986D051F4D720D008BA99D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A1986D081F4D720D008BA99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1986D0A1F4D720D008BA99D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1986D0D1F4D720D008BA99D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1986D0F1F4D720D008BA99D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1986D151F4D7264008BA99D /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
+		A1986D161F4D7264008BA99D /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
+		A1986D181F4DAA0B008BA99D /* LKAWaveCircleProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAWaveCircleProgressBar.h; sourceTree = "<group>"; };
+		A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAWaveCircleProgressBar.m; sourceTree = "<group>"; };
+		A1986D1B1F4DCDAA008BA99D /* TestViewContorller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewContorller.h; sourceTree = "<group>"; };
+		A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewContorller.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1986CF81F4D720D008BA99D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1986CF21F4D720D008BA99D = {
+			isa = PBXGroup;
+			children = (
+				A1986CFD1F4D720D008BA99D /* WaveAnimation */,
+				A1986CFC1F4D720D008BA99D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1986CFC1F4D720D008BA99D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1986CFB1F4D720D008BA99D /* WaveAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1986CFD1F4D720D008BA99D /* WaveAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				A1986D1E1F4E9522008BA99D /* LKAWaveCircleProgressBar */,
+				A1986D011F4D720D008BA99D /* AppDelegate.h */,
+				A1986D021F4D720D008BA99D /* AppDelegate.m */,
+				A1986D041F4D720D008BA99D /* ViewController.h */,
+				A1986D051F4D720D008BA99D /* ViewController.m */,
+				A1986D071F4D720D008BA99D /* Main.storyboard */,
+				A1986D0A1F4D720D008BA99D /* Assets.xcassets */,
+				A1986D0C1F4D720D008BA99D /* LaunchScreen.storyboard */,
+				A1986D0F1F4D720D008BA99D /* Info.plist */,
+				A1986CFE1F4D720D008BA99D /* Supporting Files */,
+				A1986D1B1F4DCDAA008BA99D /* TestViewContorller.h */,
+				A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */,
+			);
+			path = WaveAnimation;
+			sourceTree = "<group>";
+		};
+		A1986CFE1F4D720D008BA99D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1986CFF1F4D720D008BA99D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1986D1E1F4E9522008BA99D /* LKAWaveCircleProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A1986D151F4D7264008BA99D /* WaveLayer.h */,
+				A1986D161F4D7264008BA99D /* WaveLayer.m */,
+				A1986D181F4DAA0B008BA99D /* LKAWaveCircleProgressBar.h */,
+				A1986D191F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m */,
+			);
+			name = LKAWaveCircleProgressBar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1986CFA1F4D720D008BA99D /* WaveAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1986D121F4D720D008BA99D /* Build configuration list for PBXNativeTarget "WaveAnimation" */;
+			buildPhases = (
+				A1986CF71F4D720D008BA99D /* Sources */,
+				A1986CF81F4D720D008BA99D /* Frameworks */,
+				A1986CF91F4D720D008BA99D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaveAnimation;
+			productName = WaveAnimation;
+			productReference = A1986CFB1F4D720D008BA99D /* WaveAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1986CF31F4D720D008BA99D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Luka;
+				TargetAttributes = {
+					A1986CFA1F4D720D008BA99D = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = F9QPXX27PM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A1986CF61F4D720D008BA99D /* Build configuration list for PBXProject "WaveAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1986CF21F4D720D008BA99D;
+			productRefGroup = A1986CFC1F4D720D008BA99D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1986CFA1F4D720D008BA99D /* WaveAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1986CF91F4D720D008BA99D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1986D0E1F4D720D008BA99D /* LaunchScreen.storyboard in Resources */,
+				A1986D0B1F4D720D008BA99D /* Assets.xcassets in Resources */,
+				A1986D091F4D720D008BA99D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1986CF71F4D720D008BA99D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1986D1D1F4DCDAA008BA99D /* TestViewContorller.m in Sources */,
+				A1986D061F4D720D008BA99D /* ViewController.m in Sources */,
+				A1986D031F4D720D008BA99D /* AppDelegate.m in Sources */,
+				A1986D171F4D7264008BA99D /* WaveLayer.m in Sources */,
+				A1986D1A1F4DAA0B008BA99D /* LKAWaveCircleProgressBar.m in Sources */,
+				A1986D001F4D720D008BA99D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1986D071F4D720D008BA99D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1986D081F4D720D008BA99D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1986D0C1F4D720D008BA99D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1986D0D1F4D720D008BA99D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1986D101F4D720D008BA99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1986D111F4D720D008BA99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1986D131F4D720D008BA99D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9QPXX27PM;
+				INFOPLIST_FILE = WaveAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.find-lab.WaveAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A1986D141F4D720D008BA99D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F9QPXX27PM;
+				INFOPLIST_FILE = WaveAnimation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.find-lab.WaveAnimation";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1986CF61F4D720D008BA99D /* Build configuration list for PBXProject "WaveAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1986D101F4D720D008BA99D /* Debug */,
+				A1986D111F4D720D008BA99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1986D121F4D720D008BA99D /* Build configuration list for PBXNativeTarget "WaveAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1986D131F4D720D008BA99D /* Debug */,
+				A1986D141F4D720D008BA99D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1986CF31F4D720D008BA99D /* Project object */;
+}

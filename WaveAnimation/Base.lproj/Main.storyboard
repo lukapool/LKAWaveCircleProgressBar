@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GfX-2d-ulj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Test View Contorller-->
+        <scene sceneID="ieH-oy-xJy">
+            <objects>
+                <viewController id="GfX-2d-ulj" customClass="TestViewContorller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3gw-KF-gEZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDE-Zn-0IH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BEH-Qn-n9S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGe-t1-TJ4" customClass="LKAWaveCircleProgressBar">
+                                <rect key="frame" x="112" y="158.5" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="hFi-aT-Skk"/>
+                                    <constraint firstAttribute="height" constant="150" id="jI1-rx-6x3"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="57y-Vd-dNe">
+                                <rect key="frame" x="107" y="348.5" width="244" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="thumbTintColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="progressValueChanged:" destination="GfX-2d-ulj" eventType="valueChanged" id="GOh-Rs-tjl"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7H-qX-lF6">
+                                <rect key="frame" x="26" y="353.5" width="68" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QBp-m5-4YX">
+                                <rect key="frame" x="26" y="429.5" width="323" height="29"/>
+                                <segments>
+                                    <segment title="0%"/>
+                                    <segment title="25%"/>
+                                    <segment title="50%"/>
+                                    <segment title="75%"/>
+                                    <segment title="100%"/>
+                                </segments>
+                                <color key="tintColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="timeSegmentChanged:" destination="GfX-2d-ulj" eventType="valueChanged" id="M8t-FM-i1f"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animated to Progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2z-Dw-Kz2">
+                                <rect key="frame" x="26" y="399" width="165" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wave Animation Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1S-7K-lWc">
+                                <rect key="frame" x="26" y="467.5" width="192.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WvT-Ov-xAE">
+                                <rect key="frame" x="26" y="498" width="323" height="29"/>
+                                <segments>
+                                    <segment title="0.5s"/>
+                                    <segment title="1s"/>
+                                    <segment title="1.5s"/>
+                                    <segment title="2s"/>
+                                    <segment title="2.5s"/>
+                                </segments>
+                                <color key="tintColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="waveAnimDuration:" destination="GfX-2d-ulj" eventType="valueChanged" id="AwX-4s-ItY"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="eiy-iV-lkD">
+                                <rect key="frame" x="26" y="566.5" width="323" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qer-Vg-PoI">
+                                        <rect key="frame" x="0.0" y="0.0" width="95.5" height="24"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Tint Color">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeTinColor:" destination="GfX-2d-ulj" eventType="touchUpInside" id="2a4-tG-jDt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXn-FP-Tx1">
+                                        <rect key="frame" x="113.5" y="0.0" width="96" height="24"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Border Color">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeBorderColor:" destination="GfX-2d-ulj" eventType="touchUpInside" id="PbK-gS-dFQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgv-td-g39">
+                                        <rect key="frame" x="227.5" y="0.0" width="95.5" height="24"/>
+                                        <color key="backgroundColor" red="0.93333333330000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <state key="normal" title="Border Width">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeBorderWidth:" destination="GfX-2d-ulj" eventType="touchUpInside" id="w9J-kZ-eIz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change other Properties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDt-DQ-iXn">
+                                <rect key="frame" x="26" y="536" width="188" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F1S-7K-lWc" firstAttribute="leading" secondItem="QBp-m5-4YX" secondAttribute="leading" id="54c-th-1xb"/>
+                            <constraint firstItem="I7H-qX-lF6" firstAttribute="leading" secondItem="BEH-Qn-n9S" secondAttribute="leadingMargin" constant="10" id="7mA-K9-zU8"/>
+                            <constraint firstItem="QBp-m5-4YX" firstAttribute="top" secondItem="d2z-Dw-Kz2" secondAttribute="bottom" constant="10" id="8ph-t3-kUG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="57y-Vd-dNe" secondAttribute="trailing" constant="10" id="9fz-sV-HpV"/>
+                            <constraint firstItem="F1S-7K-lWc" firstAttribute="top" secondItem="QBp-m5-4YX" secondAttribute="bottom" constant="10" id="AKB-Zu-Znc"/>
+                            <constraint firstItem="WvT-Ov-xAE" firstAttribute="trailing" secondItem="QBp-m5-4YX" secondAttribute="trailing" id="Elc-ub-fRK"/>
+                            <constraint firstItem="d2z-Dw-Kz2" firstAttribute="leading" secondItem="I7H-qX-lF6" secondAttribute="leading" id="F65-oP-HoZ"/>
+                            <constraint firstItem="I7H-qX-lF6" firstAttribute="centerY" secondItem="57y-Vd-dNe" secondAttribute="centerY" id="G8t-7s-OMP"/>
+                            <constraint firstItem="eiy-iV-lkD" firstAttribute="top" secondItem="aDt-DQ-iXn" secondAttribute="bottom" constant="10" id="HKT-D9-beN"/>
+                            <constraint firstItem="57y-Vd-dNe" firstAttribute="leading" secondItem="I7H-qX-lF6" secondAttribute="trailing" constant="15" id="Hqy-Is-meh"/>
+                            <constraint firstItem="QBp-m5-4YX" firstAttribute="leading" secondItem="d2z-Dw-Kz2" secondAttribute="leading" id="MxV-vg-DR0"/>
+                            <constraint firstItem="57y-Vd-dNe" firstAttribute="top" secondItem="fGe-t1-TJ4" secondAttribute="bottom" constant="40" id="NaF-oE-z3k"/>
+                            <constraint firstItem="WvT-Ov-xAE" firstAttribute="top" secondItem="F1S-7K-lWc" secondAttribute="bottom" constant="10" id="O1p-av-vF7"/>
+                            <constraint firstItem="fGe-t1-TJ4" firstAttribute="centerY" secondItem="BEH-Qn-n9S" secondAttribute="centerY" constant="-100" id="OMC-7x-VHv"/>
+                            <constraint firstItem="aDt-DQ-iXn" firstAttribute="top" secondItem="WvT-Ov-xAE" secondAttribute="bottom" constant="10" id="UZ6-Y1-ueY"/>
+                            <constraint firstItem="QBp-m5-4YX" firstAttribute="trailing" secondItem="57y-Vd-dNe" secondAttribute="trailing" id="Uri-uS-QcA"/>
+                            <constraint firstItem="eiy-iV-lkD" firstAttribute="trailing" secondItem="WvT-Ov-xAE" secondAttribute="trailing" id="VBg-Q4-SlG"/>
+                            <constraint firstItem="d2z-Dw-Kz2" firstAttribute="top" secondItem="I7H-qX-lF6" secondAttribute="bottom" constant="25" id="cOH-Dm-4rR"/>
+                            <constraint firstItem="WvT-Ov-xAE" firstAttribute="leading" secondItem="F1S-7K-lWc" secondAttribute="leading" id="cVb-8d-9DS"/>
+                            <constraint firstItem="fGe-t1-TJ4" firstAttribute="centerX" secondItem="BEH-Qn-n9S" secondAttribute="centerX" id="dNg-6D-ZOm"/>
+                            <constraint firstItem="aDt-DQ-iXn" firstAttribute="leading" secondItem="WvT-Ov-xAE" secondAttribute="leading" id="qXf-ob-4sr"/>
+                            <constraint firstItem="eiy-iV-lkD" firstAttribute="leading" secondItem="WvT-Ov-xAE" secondAttribute="leading" id="xLk-Yk-PfG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="57y-Vd-dNe" id="4O2-BH-F2G"/>
+                        <outlet property="timeSegment" destination="QBp-m5-4YX" id="xif-zK-zyv"/>
+                        <outlet property="waveAnimationDurationSegment" destination="WvT-Ov-xAE" id="mGe-4p-zVe"/>
+                        <outlet property="wcView" destination="fGe-t1-TJ4" id="PCI-AS-A2i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vjn-vJ-6oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
