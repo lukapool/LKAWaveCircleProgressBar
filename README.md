@@ -6,7 +6,11 @@
 #### `LKAWaveCircleProgressBar` 是一款带有双波浪动画的圆形进度指示器视图，可自定义圆形容器的`边框颜色`、`边框线宽`，双波浪的`颜色`，`动画时间`，进度改变`时间`。
 
 ## 截图
-
+|设置进度|动画设置进度|设置波浪动画时间|
+|:---:|:---:|:---:|
+|![image](SetProgress.gif)|![image](SetProgressAnimation.gif)|![image](WaveAnimDuration.gif)|
+|设置其他属性|
+|![image](OtherProperties.gif)|
 ## 安装
 #### CocoaPods
 1、在 Podfile 文件中添加
@@ -22,7 +26,7 @@ pod install
 #import "LKAWaveCircleProgressBar.h"
 ```
 #### 手动安装
-1、下载最先的代码
+1、下载最新代码
 
 2、将`WaveAnimation/LKAWaveCircleProgressBar`文件夹拖动到 Xcode 工程项目中。确保选中 `Copy items if needed`。
 
