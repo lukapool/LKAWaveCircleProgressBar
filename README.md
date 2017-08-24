@@ -32,7 +32,7 @@ pod install
 
 3、导入头文件使用
 ```
-#import "LKAWaveCircleProgressBar.h"
+#import <LKAWaveCircleProgressBar.h>
 ```
 ## 使用方法
 #### 初始化，可以使用 Autolayout 或者设置指定 frame 来定义视图的大小位置。⚠️`确保视图的高和宽一样`
