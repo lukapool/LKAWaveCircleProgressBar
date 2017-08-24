@@ -150,8 +150,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     CGFloat width = CGRectGetWidth(self.bounds);
-    CGFloat height = CGRectGetHeight(self.bounds);
-    NSAssert(width == height, @"LKAWaveCircleProgressBar MUST BE SQUARE!");
+    NSAssert(width == CGRectGetHeight(self.bounds), @"LKAWaveCircleProgressBar MUST BE SQUARE!");
     self.containerLayer.frame = self.bounds;
     self.containerLayer.cornerRadius = width / 2.0 + 0.5;
 
