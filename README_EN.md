@@ -65,6 +65,10 @@ self.wcView.progress = value;
 @property (nonatomic, assign) CGFloat borderWidth;
 // Progress Change Animation Comletion Block，default is nil，block executes in main thread.
 @property (nonatomic, copy) Completion completion;
+// Stop Wave Rolling Animation
+- (void)stopWaveRollingAnimation;
+// Start Wave Rolling Animation
+- (void)startWaveRollingAnimation;
 ```
 
 ## License
