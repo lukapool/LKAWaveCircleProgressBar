@@ -3,6 +3,7 @@
 ![Language](https://img.shields.io/badge/Language-Objective--C-lightgrey.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)
 
+[ENGLISH](README_EN.md)
 #### `LKAWaveCircleProgressBar` 是一款带有双波浪动画的圆形进度指示器视图，可自定义圆形容器的`边框颜色`、`边框线宽`，双波浪的`颜色`，`动画时间`，进度改变`时间`。
 
 ## 截图
