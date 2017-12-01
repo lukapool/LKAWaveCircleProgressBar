@@ -35,7 +35,8 @@
         [self.waves addObject:waveLayer];
     }
     
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(addWaveRollingAnimation) name:UIApplicationWillEnterForegroundNotification object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(addWaveRollingAnimation) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(removeWaveRollingAnimation) name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -55,7 +56,8 @@
 }
 
 - (void)dealloc {
-    [NSNotificationCenter.defaultCenter removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
+    [NSNotificationCenter.defaultCenter removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
+    [NSNotificationCenter.defaultCenter removeObserver:self name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 #pragma mark - lazy loading property
@@ -180,6 +182,14 @@
         waveRollingAnim.duration = self.waveRollingDuration + (i * 0.3);
         [self.waves[i] addAnimation:waveRollingAnim forKey:@"WaveRollingAnimation"];
     }
+}
+
+- (void)stopWaveRollingAnimation {
+    [self removeWaveRollingAnimation];
+}
+
+- (void)startWaveRollingAnimation {
+    [self addWaveRollingAnimation];
 }
 
 - (void)removeWaveRollingAnimation {

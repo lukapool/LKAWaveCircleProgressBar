@@ -21,5 +21,7 @@ typedef void(^Completion)();
 @property (nonatomic, copy) Completion completion;
 
 - (void)setProgress:(float)progress animated:(BOOL)animated;
+- (void)stopWaveRollingAnimation;
+- (void)startWaveRollingAnimation;
 
 @end

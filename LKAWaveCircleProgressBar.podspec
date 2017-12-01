@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LKAWaveCircleProgressBar"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "A progress bar with waves animation."
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                            LKAWaveCircleProgressBar 是一款带有双波浪动画的圆形进度指示器视图，可自定义圆形容器的边框颜色、边框线宽，双波浪的颜色，动画时间，进度改变时间。
+                            LKAWaveCircleProgressBar is a circular progress indicator with wave rolling animation, you can customize the border color, border line width, wave color, wave rolling animation duration, progress change animation duration.
                    DESC
 
   s.homepage     = "https://github.com/lukapool/LKAWaveCircleProgressBar"
