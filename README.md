@@ -1,5 +1,5 @@
 ![License MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square) 
-![CocoaPods](https://img.shields.io/badge/Pod-v0.0.1-blue.svg?style=flat-square)
+![CocoaPods](https://img.shields.io/badge/Pod-v0.1.0-blue.svg?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-Objective--C-lightgrey.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)
 
@@ -66,6 +66,10 @@ self.wcView.progress = value;
 @property (nonatomic, assign) CGFloat borderWidth;
 // 进度改变动画完成后回调 Block，默认值为空，主线程执行 block。
 @property (nonatomic, copy) Completion completion;
+// 停止波浪滚动效果
+- (void)stopWaveRollingAnimation;
+// 开始波浪滚动效果
+- (void)startWaveRollingAnimation;
 ```
 
 ## License
