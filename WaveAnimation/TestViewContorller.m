@@ -30,6 +30,8 @@
     self.wcView.completion = ^{
         self.progressView.value = self.wcView.progress;
     };
+    
+    [self.wcView startWaveRollingAnimation];
 }
 
 - (IBAction)waveAnimDuration:(UISegmentedControl *)sender {
@@ -47,10 +49,12 @@
 
 - (IBAction)changeTinColor:(UIButton *)sender {
     self.wcView.progressTintColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:0.7];
+//      [self.wcView stopWaveRollingAnimation];
 }
 
 - (IBAction)changeBorderColor:(UIButton *)sender {
     self.wcView.borderColor = [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:0.7];
+//      [self.wcView startWaveRollingAnimation];
 }
 
 - (IBAction)changeBorderWidth:(UIButton *)sender {

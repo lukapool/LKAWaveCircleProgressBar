@@ -7,6 +7,7 @@
 //
 
 #import "TestAViewController.h"
+#import "LKAWaveCircleProgressBar.h"
 
 @interface TestAViewController ()
 
@@ -17,6 +18,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    LKAWaveCircleProgressBar * wcView = [[LKAWaveCircleProgressBar alloc] initWithFrame:CGRectMake(62.5,125.5,248.5,248.5)];
+    [wcView setProgress:0.8 animated:YES];
+    wcView.progressAnimationDuration = 0.7;
+    [self.view addSubview:wcView];
+    [wcView startWaveRollingAnimation];
 }
 
 - (void)didReceiveMemoryWarning {

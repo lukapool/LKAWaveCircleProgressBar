@@ -12,6 +12,8 @@
 
 @property (nonatomic, strong)  NSMutableArray *waves;
 @property (nonatomic, strong) CALayer *containerLayer;
+@property (nonatomic, assign) BOOL isStop;
+@property (nonatomic, assign) BOOL isAnimating;
 
 @end
 
@@ -25,6 +27,8 @@
     _progressTintColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.5];
     _borderColor = [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:0.9];
     _borderWidth = 2.0;
+    _isStop = YES;
+    _isAnimating = NO;
     
     for (NSUInteger i = 0; i < 2; i++) {
         WaveLayer *waveLayer = [WaveLayer layer];
@@ -35,8 +39,8 @@
         [self.waves addObject:waveLayer];
     }
     
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(addWaveRollingAnimation) name:UIApplicationDidBecomeActiveNotification object:nil];
-    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(removeWaveRollingAnimation) name:UIApplicationWillResignActiveNotification object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(startWaveRollingAnimation) name:UIApplicationDidBecomeActiveNotification object:nil];
+    [NSNotificationCenter.defaultCenter addObserver:self selector:@selector(stopWaveRollingAnimation) name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -99,7 +103,7 @@
 }
 
 - (void)setProgress:(float)progress animated:(BOOL)animated {
-    [self updateProgress:progress animated:YES];
+    [self updateProgress:progress animated:animated];
 }
 
 - (void)addProgressAnimationFromValue: (NSTimeInterval)fromValue to: (NSTimeInterval)toValue {
@@ -144,8 +148,8 @@
     // wave Rolling Duration
 - (void)setWaveRollingDuration:(NSTimeInterval)waveRollingDuration {
     _waveRollingDuration = waveRollingDuration;
-    [self removeWaveRollingAnimation];
-    [self addWaveRollingAnimation];
+    if (!self.isStop)
+        [self startWaveRollingAnimation];
 }
 
 #pragma mark - prepare to layout
@@ -169,7 +173,8 @@
 
 - (void)didMoveToSuperview {
     [super didMoveToSuperview];
-    [self addWaveRollingAnimation];
+    if (!self.isStop)
+        [self startWaveRollingAnimation];
 }
 
 - (void)addWaveRollingAnimation {
@@ -177,6 +182,7 @@
     waveRollingAnim.fromValue = @0;
     waveRollingAnim.toValue = @(M_PI * 2);
     waveRollingAnim.repeatCount = HUGE_VALF;
+    waveRollingAnim.removedOnCompletion = NO;
     waveRollingAnim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionLinear];
     for (int i = 0; i < self.waves.count; i++) {
         waveRollingAnim.duration = self.waveRollingDuration + (i * 0.3);
@@ -185,11 +191,19 @@
 }
 
 - (void)stopWaveRollingAnimation {
-    [self removeWaveRollingAnimation];
+    self.isStop = YES;
+    if (self.isAnimating) {
+        self.isAnimating = NO;
+        [self removeWaveRollingAnimation];
+    }
 }
 
 - (void)startWaveRollingAnimation {
-    [self addWaveRollingAnimation];
+    self.isStop = NO;
+    if (!self.isAnimating) {
+        self.isAnimating = YES;
+        [self addWaveRollingAnimation];
+    }
 }
 
 - (void)removeWaveRollingAnimation {

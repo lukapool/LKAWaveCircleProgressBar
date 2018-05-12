@@ -16,6 +16,7 @@
 		A1986D1D1F4DCDAA008BA99D /* TestViewContorller.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */; };
 		A1986D241F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D211F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m */; };
 		A1986D251F4EBDB5008BA99D /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1986D231F4EBDB5008BA99D /* WaveLayer.m */; };
+		A1FE73B620A6D32700F9ED1B /* TestAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1FE73B520A6D32700F9ED1B /* TestAViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		A1986D211F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAWaveCircleProgressBar.m; sourceTree = "<group>"; };
 		A1986D221F4EBDB5008BA99D /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
 		A1986D231F4EBDB5008BA99D /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
+		A1FE73B420A6D32700F9ED1B /* TestAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestAViewController.h; sourceTree = "<group>"; };
+		A1FE73B520A6D32700F9ED1B /* TestAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,8 @@
 				A1986CFE1F4D720D008BA99D /* Supporting Files */,
 				A1986D1B1F4DCDAA008BA99D /* TestViewContorller.h */,
 				A1986D1C1F4DCDAA008BA99D /* TestViewContorller.m */,
+				A1FE73B420A6D32700F9ED1B /* TestAViewController.h */,
+				A1FE73B520A6D32700F9ED1B /* TestAViewController.m */,
 			);
 			path = WaveAnimation;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				A1986D251F4EBDB5008BA99D /* WaveLayer.m in Sources */,
 				A1986D031F4D720D008BA99D /* AppDelegate.m in Sources */,
 				A1986D241F4EBDB5008BA99D /* LKAWaveCircleProgressBar.m in Sources */,
+				A1FE73B620A6D32700F9ED1B /* TestAViewController.m in Sources */,
 				A1986D001F4D720D008BA99D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +346,7 @@
 				A1986D141F4D720D008BA99D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

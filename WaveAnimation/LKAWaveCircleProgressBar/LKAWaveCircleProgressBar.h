@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^Completion)();
+typedef void (^Completion)();
 
 @interface LKAWaveCircleProgressBar : UIView
 
