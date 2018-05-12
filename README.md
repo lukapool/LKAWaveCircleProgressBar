@@ -1,5 +1,5 @@
 ![License MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square) 
-![CocoaPods](https://img.shields.io/badge/Pod-v0.1.0-blue.svg?style=flat-square)
+![CocoaPods](https://img.shields.io/badge/Pod-v0.2.2-blue.svg?style=flat-square)
 ![Language](https://img.shields.io/badge/Language-Objective--C-lightgrey.svg?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-iOS-yellow.svg?style=flat-square)
 
